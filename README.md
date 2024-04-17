@@ -13,7 +13,7 @@ brew install <FORMULA>
 
 | Repository | Formula | Description |
 | --- | --- | --- |
-| [abctl](https://github.com/airbytehq/abctl) | [formula](Formula/abctl.rb) | Command line to for managing Airbyte local installations |
+| [abctl](https://github.com/airbytehq/abctl) | [formula](Formula/abctl.rb) | Command line tool for managing Airbyte local installations |
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh)
