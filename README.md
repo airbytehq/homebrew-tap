@@ -1,11 +1,19 @@
-# Airbytehq Tap
+# Airbyte Homebrew Tap
 
-## How do I install these formulae?
+Homebrew formulae that allows installation of Airbyte tools through the [Homebrew](https://brew.sh) package manager.
 
-`brew install airbytehq/tap/<formula>`
+## Installation
 
-Or `brew tap airbytehq/tap` and then `brew install <formula>`.
+```shell
+brew tap airbytehq/tap
+brew install <FORMULA>
+```
+
+## Formulae
+
+| Repository | Formula | Description |
+| --- | --- | --- |
+| [abctl](https://github.com/airbytehq/abctl) | [formula](Formula/abctl.rb) | Command line to for managing Airbyte local installations |
 
 ## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh)
