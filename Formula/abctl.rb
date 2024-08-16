@@ -1,8 +1,8 @@
 class Abctl < Formula
   desc "Airbyte's command-line tool for running Airbyte locally"
   homepage "https://github.com/airbytehq/abctl"
-  url "https://github.com/airbytehq/abctl/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "3994d1f1c3aa1f89399610386088ea644e7f0fed22efdde20034d8caf5ad1356"
+  url "https://github.com/airbytehq/abctl/archive/refs/tags/v0.12.1.tar.gz"
+  sha256 "fb6f1d4f82d2a7a9d9bc08229904967a7a81966f48b5f2ef62bfb32609c7ffb1"
   license "MIT"
 
   livecheck do
@@ -13,12 +13,12 @@ class Abctl < Formula
   depends_on "go" => :build
 
   def install
-    ENV["ABCTL_VERSION"] = "v0.12.0"
+    ENV["ABCTL_VERSION"] = "v0.12.1"
     system "make", "build"
     bin.install "build/abctl"
   end
 
   test do
-    assert_match "version: v0.12.0", shell_output("#{bin}/abctl version").strip
+    assert_match "version: v0.12.1", shell_output("#{bin}/abctl version").strip
   end
 end
