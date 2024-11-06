@@ -1,5 +1,5 @@
 class Abctl < Formula
-  ABCTL_VERSION = "v0.20.1".freeze
+  ABCTL_VERSION = "v0.21.0".freeze
 
   desc "Airbyte's command-line tool for running Airbyte locally"
   homepage "https://github.com/airbytehq/abctl"
