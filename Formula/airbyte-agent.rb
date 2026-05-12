@@ -6,12 +6,12 @@ class AirbyteAgent < Formula
   desc "CLI for Airbyte Agents, designed for use by both humans and agents"
   homepage "https://github.com/airbytehq/airbyte-agent-cli"
   version "0.1.0"
-  license "ELv2"
+  license "Elastic-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/airbytehq/airbyte-agent-cli/releases/download/v0.1.0/airbyte-agent_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4337b531a4afd1fad0ea2548a1e3d56c1f0d0db58d32742771344fc90b1279f9"
+      sha256 "4dd86f77e347ef2de98d0b39eec2dca1ce3d8669d1ba15a57b1870030c399775"
 
       define_method(:install) do
         bin.install "airbyte-agent"
@@ -19,7 +19,7 @@ class AirbyteAgent < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/airbytehq/airbyte-agent-cli/releases/download/v0.1.0/airbyte-agent_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a201c4be6734c2341916bb781cfebaa60538daec3c4ae2fa2a241b33ccf3157a"
+      sha256 "32ce70226e05ff180bca1515057969be4495a49356d9cc4846fadea4762539af"
 
       define_method(:install) do
         bin.install "airbyte-agent"
@@ -30,14 +30,14 @@ class AirbyteAgent < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/airbytehq/airbyte-agent-cli/releases/download/v0.1.0/airbyte-agent_0.1.0_linux_amd64.tar.gz"
-      sha256 "e8f04f5e6aab0e7d50498ceee99f6071d4296cf9f35d01e406c29e3f82b3bddd"
+      sha256 "cf9ea3e056661f3e3cb95b68cd6c63e62e60e7b849e9228b854ce02d59c7945c"
       define_method(:install) do
         bin.install "airbyte-agent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/airbytehq/airbyte-agent-cli/releases/download/v0.1.0/airbyte-agent_0.1.0_linux_arm64.tar.gz"
-      sha256 "7b663fcc50179c2d3ffa93d59576c4099e156057e32abba8722124a4bb43a230"
+      sha256 "bfe26f01ee063677a31625a500ee05431f94c2d6d1165a3077ca0e1f8778a10d"
       define_method(:install) do
         bin.install "airbyte-agent"
       end
