@@ -23,7 +23,7 @@ class AirbyteCloudCli < Formula
       "--python", "3.12",
       "--compile-bytecode",
       "--force",
-      "airbyte==#{version}"
+      "airbyte-cloud-cli==#{version}"
   end
 
   test do
