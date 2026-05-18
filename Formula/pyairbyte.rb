@@ -5,16 +5,17 @@ class Pyairbyte < Formula
   sha256 "4433e94bf9634c3d63509090d2c3ab58bc9a0abbbf745a23bfacc9f8c892a211"
   license "Elastic-2.0"
 
-  depends_on "python@3.12"
   depends_on "uv"
 
   def install
     ENV["UV_TOOL_DIR"] = libexec/"uv-tools"
     ENV["UV_TOOL_BIN_DIR"] = bin
-    ENV["UV_NO_MANAGED_PYTHON"] = "1"
+    ENV["UV_PYTHON_INSTALL_DIR"] = libexec/"uv-python"
+    ENV["UV_MANAGED_PYTHON"] = "1"
 
     system "uv", "tool", "install",
-      "--python", Formula["python@3.12"].opt_bin/"python3.12",
+      "--managed-python",
+      "--python", "3.12",
       "--compile-bytecode",
       "--force",
       "airbyte==#{version}"
