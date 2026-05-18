@@ -14,6 +14,7 @@ brew install <FORMULA>
 | Repository | Formula | Description |
 | --- | --- | --- |
 | [abctl](https://github.com/airbytehq/abctl) | [formula](Formula/abctl.rb) | Command line tool for managing Airbyte local installations |
+| [PyAirbyte](https://github.com/airbytehq/PyAirbyte) | [formula](Formula/pyairbyte.rb) | Python library and CLI for moving data with Airbyte connectors |
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh)
